@@ -1,6 +1,8 @@
 # E-Commerce
 
 
+# Technology Stack :
+
 # Back-end :
  
   
@@ -14,6 +16,7 @@
  
  - [x] Lombok
  
+
  
  # Front-end : 
  
