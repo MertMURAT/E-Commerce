@@ -55,7 +55,7 @@
             <th scope="row" th:text="${iStat.index + 1}">1</th>
             <td th:text="${product.name}">Larry</td>
             <td th:text="${product.category.name}">Larry</td>
-            <td><img src="" height="100px" width="100px"  th:src="@{${'/productImages/' + product.imageName}}"></td>
+            <td><img src="https://st.myideasoft.com/shop/ir/87/myassets/products/838/domates-tohumu-money-maker-1.jpg?revision=1643120505" height="100px" width="100px"  th:src="@{${'/productImages/' + product.imageName}}"></td>
 
             <td><a href="" th:href="@{/admin/product/delete/{id}(id=${product.id})}" class="btn btn-danger">Sil</a></td>
             <td><a href="" th:href="@{/admin/product/update/{id}(id=${product.id})}" class="btn btn-warning">Güncelle</a></td>
