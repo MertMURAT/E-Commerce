@@ -4,7 +4,7 @@
 # Technology Stack :
 ***
 # Back-end :
-*** 
+
   
  - [x] Java (Programming Language)
  
@@ -19,11 +19,11 @@
 
 *** 
  # Front-end : 
-*** 
+
  - [x] Thymeleaf
  
 *** 
  # Database :
-*** 
+ 
  - [x] H2 Database
  
