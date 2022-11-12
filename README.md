@@ -1,11 +1,10 @@
-# E-Commerce
-
 ***
-
+# E-Commerce
+***
 # Technology Stack :
 ***
 # Back-end :
- 
+*** 
   
  - [x] Java (Programming Language)
  
@@ -18,13 +17,13 @@
  - [x] Lombok
  
 
- 
+*** 
  # Front-end : 
- 
+*** 
  - [x] Thymeleaf
  
- 
+*** 
  # Database :
- 
+*** 
  - [x] H2 Database
  
