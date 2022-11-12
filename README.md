@@ -17,12 +17,12 @@
  - [x] Lombok
  
 
-*** 
+
  # Front-end : 
 
  - [x] Thymeleaf
  
-*** 
+ 
  # Database :
  
  - [x] H2 Database
