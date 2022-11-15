@@ -27,3 +27,6 @@
  
  - [x] H2 Database
  
+ # UML Diagram
+ 
+![java](https://user-images.githubusercontent.com/58560920/202035233-ab7b0c47-f495-424d-acaf-f362e31d301e.png)
