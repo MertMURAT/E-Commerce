@@ -39,7 +39,7 @@ public class AdminController {
 
     @GetMapping("/admin/categories/add")
     public String getCategoriesAdd(Model model) {
-        model.addAttribute("category",new Category());
+        model.addAttribute("category", new Category());
         return "categoriesAdd";
     }
 
@@ -59,23 +59,23 @@ public class AdminController {
     public String updateCategories(@PathVariable int id, Model model) {
         Optional<Category> category = categoryService.getCategoryById(id);
         if (category.isPresent()) {
-            model.addAttribute("category",category.get());
+            model.addAttribute("category", category.get());
             return "categoriesAdd";
-        }else
-        return "404";
+        } else
+            return "404";
     }
 
     // Product Section
 
     @GetMapping("/admin/products")
     public String products(Model model) {
-        model.addAttribute("products",productService.getAllProduct());
+        model.addAttribute("products", productService.getAllProduct());
         return "products";
     }
 
     @GetMapping("/admin/products/add")
     public String productAddGet(Model model) {
-        model.addAttribute("productDTO",new ProductDTO());
+        model.addAttribute("productDTO", new ProductDTO());
         model.addAttribute("categories", categoryService.getAllCategory());
         return "productsAdd";
     }
@@ -83,7 +83,7 @@ public class AdminController {
     @PostMapping("/admin/products/add")
     public String productAddPost(@ModelAttribute("productDTO") ProductDTO productDTO,
                                  @RequestParam("productImage") MultipartFile file,
-                                 @RequestParam("imgName")String imgName) throws IOException {
+                                 @RequestParam("imgName") String imgName) throws IOException {
         Product product = new Product();
         product.setId(productDTO.getId());
         product.setName(productDTO.getName());
@@ -102,7 +102,6 @@ public class AdminController {
 
         product.setImageName(imageUUID);
         productService.addProduct(product);
-
 
 
         return "redirect:/admin/products";
@@ -127,7 +126,7 @@ public class AdminController {
         productDTO.setImageName(product.getImageName());
 
 
-        model.addAttribute("categories",categoryService.getAllCategory());
+        model.addAttribute("categories", categoryService.getAllCategory());
         model.addAttribute("productDTO", productDTO);
 
         return "productsAdd";

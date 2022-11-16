@@ -8,7 +8,8 @@ import java.util.List;
 public class GlobalData {
 
     public static List<Product> cart;
-    static{
+
+    static {
         cart = new ArrayList<Product>();
     }
 }

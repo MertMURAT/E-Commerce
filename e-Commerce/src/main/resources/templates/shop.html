@@ -34,13 +34,13 @@
                     <a class="nav-link" th:href="@{/shop}" href="#">Dükkan</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Giriş</a>
+                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#"></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Çıkış</a>
+                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#"></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/cart}" href="#">Kart</a>
+                    <a class="nav-link" th:href="@{/cart}" href="#">Sepet</a>
                 </li>
                 <li class="nav-item active">
                     <span class="nav-link" th:text="${cartCount}">0</span>

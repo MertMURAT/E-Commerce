@@ -18,7 +18,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" >
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img th:src="@{/images/logo.png}"  src="../static/images/logo.png" width="auto" height="40" class="d-inline-block align-top" alt=""/>
+            <img th:src="@{/images/logo.png}"  src="../static/images/logo.png" width="auto" height="50" class="d-inline-block align-top" alt=""/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,19 +28,19 @@
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/}" href="#">Ana Ekran</a>
+                    <a class="nav-link" th:href="@{/}" href="#">Ana Sayfa</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" th:href="@{/shop}" href="#">Dükkan</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">Giriş</a>
+                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#"></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">Çıkış</a>
+                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#"></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/cart}" href="#">kart</a>
+                    <a class="nav-link" th:href="@{/cart}" href="#">Sepet</a>
                 </li>
                 <li class="nav-item active">
                     <span class="nav-link" th:text="${cartCount}">0</span>
@@ -91,7 +91,7 @@
                                         <div class="mt-5 d-flex justify-content-between align-items-center">
                                             <div>
                                                 <a href="#!" th:href="@{/cart/removeItem/{index}(index=${iStat.index})}"  type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                                                        class="fas fa-trash-alt mr-1"></i> Ürünü SİL </a>
+                                                        class="fas fa-trash-alt mr-1"></i> Ürünü Sil </a>
 
                                             </div>
                                             <p class="mb-0"><span><strong>₹<span th:text="${item.price}"></span></strong></span></p>
